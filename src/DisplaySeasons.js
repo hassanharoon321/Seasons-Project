@@ -1,6 +1,6 @@
-import "./seasonDisplay.css";
 import React from "react";
 import 'semantic-ui-css/semantic.min.css';
+import './Style.css';
 
 const seasonConfig = {
     summer :{
@@ -29,7 +29,7 @@ const DisplaySeasons = (props)=>{
     return(
         <div>
             <i className={ `icon-left massive ${iconName} icon` }/>
-            <h1>{text}</h1>
+            <h1 className="hello">{text}</h1>
             <i className={ `icon-right massive ${iconName} icon` }/>
 
         </div>

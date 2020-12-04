@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import DisplaySeasons from "./DisplaySeasons";
 import 'semantic-ui-css/semantic.min.css';
+import Spinning from "./Spinning";
+
 
 class App extends React.Component{
         state = {
@@ -34,7 +36,7 @@ class App extends React.Component{
             return <div><DisplaySeasons lat = {this.state.lat}/></div>
         }
 
-        return (<div>Loading.....</div>)
+        return (<div><Spinning message="Please Accept Location Request"/></div>)
         
     }
 }
